@@ -1,0 +1,40 @@
+:root {
+            --accent: #6ab1cf;
+            --accent-soft: rgba(106, 177, 207, 0.376);
+            --bg: #ffffff;
+            --text-main: #0f172a;
+            --text-sub: #64748b;
+            --card-bg: #f8fafc;
+        }
+        [data-theme="dark"] {
+            --bg: #020617;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --card-bg: #0f172a;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text-main);
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.8;
+            padding: 40px 8%;
+        }
+        .lang-switch-wrapper {display: flex;align-items: center;}
+        .lang-switch {position: relative;display: inline-block;width: 60px;height: 30px;cursor: pointer;}
+        .lang-switch input { display: none; }
+        .lang-slider {position: absolute;top: 0; left: 0; right: 0; bottom: 0;background-color: var(--accent-soft);border: 1px solid var(--accent);border-radius: 30px;display: flex;justify-content: space-around;align-items: center;transition: 0.4s;}
+        .lang-label {font-size: 0.75rem;font-weight: 700;color: var(--text-main);z-index: 1;}
+        .lang-knob {position: absolute;height: 24px;width: 26px;left: 3px;background-color: var(--accent);border-radius: 50%;transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+        #lang-checkbox:checked + .lang-slider .lang-knob {transform: translateX(28px);}
+        .btn-primary:hover { transform: scale(1.05); }
+        .container-legal { max-width: 800px; margin: 0 auto; }
+        .back-link { 
+            text-decoration: none; color: var(--accent); 
+            display: inline-flex; align-items: center; gap: 10px; margin-bottom: 40px;
+            font-weight: 600;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 30px; color: var(--accent); }
+        h2 { font-size: 1.5rem; margin-top: 40px; color: var(--accent); border-bottom: 1px solid var(--text-sub); padding-bottom: 10px; }
+        p, li { color: var(--text-sub); }
+        .legal-card { background: var(--card-bg); padding: 40px; border-radius: 24px; border: 1px solid rgba(106, 177, 207, 0.1); }
+    

@@ -1,6 +1,6 @@
 # Autoriser tous les robots à indexer le site
 User-agent: *
 Allow: /
-Dissalow: ./assets/*
+Dissalow: ./static/*
 Dissalow: back.js
 Dissalow: i18n.js

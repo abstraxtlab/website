@@ -17,25 +17,29 @@ const translations = {
         "s3-d": "Protection maximale de vos actifs.",
         "work-head": "Projets Récents",
         "footer-desc": "Architectes du futur numérique, nous transformons vos idées complexes en solutions fluides.",
-        "f-col1-title": "Solutions",
+        "f-col1-title": "À propos",
         "f-col2-title": "Entreprise",
         "f-col3-title": "Ressources",
+        "f-l2": "Mentions Légales",
+        "f-l9" : "Accès Beta",
+        "f-l10" : "Documentation",
         "cgu-title": "Mentions Légales & RGPD",
         "cookie-text": "Ce site n'utilise aucun cookie de traçage tiers. Nous stockons uniquement des préférences locales pour le thème et la langue. Aucune donnée personnelle n'est collectée ou vendue.",
-        "cgu-body": `
-            <strong>Éditeur :</strong> Abstraxt Tech.<br>
-            <strong>Hébergement :</strong> [Render]<br><br>
-            <strong>Protection des données (RGPD) :</strong> 
-            Ce site n'utilise aucun cookie de traçage tiers (No-Third-Party Cookies). 
-            Les seules données stockées sont locales (LocalStorage) pour : <br>
-            1. Votre préférence de thème (Sombre/Clair).<br>
-            2. Votre choix de langue (FR/EN).<br>
-            Aucune donnée personnelle n'est revendue ou collectée à votre insu.
-        `,
         "contact-title": "Parlons de votre projet",
         "form-name": "Nom",
         "form-msg": "Message",
         "form-btn": "Envoyer",
+        "legal-title": "Mentions Légales & CGU",
+        "legal-1-title": "1. Éditeur du site",
+        "legal-1-content": "Le site <strong>Abstraxt.tech</strong> est édité par l'équipe Abstraxt.<br>Siège social : 123 Rue de l'Innovation, 75000 Paris.<br>Contact : hello@abstraxt.tech</p>",
+        "legal-2-title": "2. Hébergement",
+        "legal-2-content": "Ce site est hébergé par : <strong>Vercel Inc.</strong><br>340 S Lemon Ave #1150, Walnut, CA 91789, USA.</p>",
+        "legal-3-title": "3. Propriété Intellectuelle",
+        "legal-3-content": "Tous les éléments du site Abstraxt (textes, graphismes, logos, animations) sont la propriété exclusive de l'éditeur, sauf mention contraire.</p>",
+        "legal-4-title": "4. Politique de Confidentialité (RGPD)",
+        "legal-4-content": "Nous respectons votre vie privée. Ce site :<br>- N'utilise aucun cookie de pistage tiers.<br>- Utilise le stockage local pour vos préférences de thème et de langue.<br>- Les données du formulaire de contact sont uniquement utilisées pour traiter votre demande.</p>",
+        "legal-5-title": "5. Limitation de Responsabilité",
+        "legal-5-content": "Abstraxt ne pourra être tenu responsable des dommages directs ou indirects causés au matériel de l'utilisateur lors de l'accès au site.</p>"
     },
     en: {
         "nav-services": "Services",
@@ -55,25 +59,29 @@ const translations = {
         "s3-d": "Maximum protection for your assets.",
         "work-head": "Recent Work",
         "footer-desc": "Digital architects, turning complex ideas into seamless solutions.",
-        "f-col1-title": "Solutions",
+        "f-col1-title": "About",
+        "f-l2": "Legal Notice",
+        "f-l9" : "Beta Access",
+        "f-l10" : "Documentation",
         "f-col2-title": "Company",
         "f-col3-title": "Resources",
         "cgu-title": "Legal Notice & GDPR",
         "cookie-text": "This site uses no third-party tracking cookies. We only store local preferences for theme and language. No personal data is collected or sold.",
-        "cgu-body": `
-            <strong>Publisher:</strong> Abstraxt Tech.<br>
-            <strong>Hosting:</strong> [Render]<br><br>
-            <strong>Data Protection (GDPR):</strong> 
-            This site uses no third-party tracking cookies (No-Third-Party Cookies).
-            The only stored data is local (LocalStorage) for: <br>
-            1. Your theme preference (Dark/Light).<br>
-            2. Your language choice (FR/EN).<br>
-            No personal data is sold or collected without your knowledge.
-        `,
         "contact-title": "Let's talk about your project",
         "form-name": "Name",
         "form-msg": "Message",
         "form-btn": "Send Message",
+        "legal-title": "Legal Notice & Terms of Service",
+        "legal-1-title": "1. Site Publisher",
+        "legal-1-content": "The site <strong>Abstraxt.tech</strong> is published by the Abstraxt team.<br>Registered office: 123 Innovation Street, 75000 Paris.<br>Contact: hello@abstraxt.tech,</p>",
+        "legal-2-title": "2. Hosting",
+        "legal-2-content": "This site is hosted by: <strong>Vercel Inc.</strong><br>340 S Lemon Ave #1150, Walnut, CA 91789, USA.</p>",
+        "legal-3-title": "3. Intellectual Property",
+        "legal-3-content": "All elements of the Abstraxt site (texts, graphics, logos, animations) are the exclusive property of the publisher, unless otherwise stated.</p>",
+        "legal-4-title": "4. Privacy Policy (GDPR)",
+        "legal-4-content": "We respect your privacy. This site:<br>- Uses no third-party tracking cookies.<br>- Uses local storage for your theme and language preferences.<br>- Contact form data is only used to process your request.</p>",
+        "legal-5-title": "5. Limitation of Liability",
+        "legal-5-content": "Abstraxt shall not be liable for any direct or indirect damage caused to the user's equipment when accessing the site.</p>"
     }
 };
 

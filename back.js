@@ -1,7 +1,5 @@
-// 1. Importation du dictionnaire
 import translations from './i18n.js';
 
-// --- ANIMATIONS AU SCROLL ---
 const observerOptions = { threshold: 0.1 };
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -13,18 +11,15 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// --- GESTION DU THÈME ---
-// On l'attache à window pour que le onclick du HTML le trouve
 window.toggleTheme = function() {
     const body = document.body;
-    const checkbox = document.getElementById('checkbox'); // Assure-toi que l'id correspond à ton switch thème
+    const checkbox = document.getElementById('checkbox'); 
     
     const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     body.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
 }
 
-// --- GESTION DES LANGUES ---
 let currentLang = 'fr';
 
 window.toggleLang = function() {
@@ -41,17 +36,13 @@ window.toggleLang = function() {
     localStorage.setItem('preferred-lang', currentLang);
 }
 
-// --- INITIALISATION AU CHARGEMENT ---
 document.addEventListener('DOMContentLoaded', () => {
-    // Restaurer la langue
     const savedLang = localStorage.getItem('preferred-lang');
     const langCheckbox = document.getElementById('lang-checkbox');
     if (savedLang === 'en' && langCheckbox) {
         langCheckbox.checked = true;
         window.toggleLang(); 
     }
-
-    // Restaurer le thème
     const savedTheme = localStorage.getItem('theme');
     const themeCheckbox = document.getElementById('checkbox');
     if (savedTheme === 'dark') {
@@ -76,17 +67,17 @@ if (form) {
             });
 
             if (response.ok) {
-                status.innerHTML = "✨ Message envoyé avec succès !";
+                status.innerHTML = "Message envoyé avec succès !";
                 status.style.color = "var(--accent)";
                 status.style.display = "block";
                 form.reset();
             } else {
-                status.innerHTML = "❌ Une erreur est survenue.";
+                status.innerHTML = "Une erreur est survenue.";
                 status.style.color = "red";
                 status.style.display = "block";
             }
         } catch (error) {
-            status.innerHTML = "❌ Impossible d'envoyer le message.";
+            status.innerHTML = "Impossible d'envoyer le message.";
             status.style.display = "block";
         }
     });
