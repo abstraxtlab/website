@@ -82,3 +82,19 @@ if (form) {
         }
     });
 }
+window.toggleMenu = function() {
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('full-menu');
+    
+    btn.classList.toggle('active');
+    menu.classList.toggle('active');
+    
+    if (menu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Lier le bouton au clic
+document.getElementById('menu-toggle').addEventListener('click', toggleMenu);

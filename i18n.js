@@ -1,7 +1,7 @@
 const translations = {
     fr: {
         "nav-services": "Services",
-        "nav-work": "Portfolio",
+        "nav-mention": "Mention légale",
         "hero-title": "Beyond Code.<br>Beyond Cloud.",
         "hero-slogan": '"You can do it if you try"',
         "btn-start": "Démarrer un projet",
@@ -43,7 +43,7 @@ const translations = {
     },
     en: {
         "nav-services": "Services",
-        "nav-work": "Work",
+        "nav-mention": "Legal Notice",
         "hero-title": "Beyond Code.<br>Beyond Cloud.",
         "hero-slogan": '"You can do it if you try"',
         "btn-start": "Get Started",

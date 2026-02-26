@@ -25,40 +25,57 @@
 </head>
 <body data-theme="light">
 
-    <nav>
-        <div class="logo">Abstraxt.</div>
+<nav> 
+    
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="full-menu" id="full-menu">
         <div class="nav-links">
-            <a href="#services" data-i18n="nav-services">Services</a>
-            <a href="#work" data-i18n="nav-work">Portfolio</a>
+            <a href="/legal.html" data-i18n="nav-mention" onclick="toggleMenu()">Mention légale</a>
             <a href="https://dev.artemix-core.fr/">Artemix-core beta</a>
-            <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" onclick="toggleTheme()" />
-                <div class="slider">
-                <span class="icon"><i class="bi bi-sun-fill"></i></span>
-                <span class="icon"><i class="bi bi-moon-stars-fill"></i></span>
-            </div>
-            </label>
-            </div>
-            <div class="lang-switch-wrapper">
-            <label class="lang-switch">
-            <input type="checkbox" id="lang-checkbox" onclick="toggleLang()">
-                <div class="lang-slider">
-                    <span class="lang-label fr"><i class="bi bi-translate"></i>FR</span>
-                    <span class="lang-label en"><i class="bi bi-translate"></i>EN</span>
-                <div class="lang-knob"></div>
-            </div>
-            </label>
+            
+            <div class="menu-switches">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" onclick="toggleTheme()" />
+                        <div class="slider">
+                            <span class="icon"><i class="bi bi-sun-fill"></i></span>
+                            <span class="icon"><i class="bi bi-moon-stars-fill"></i></span>
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="lang-switch-wrapper">
+                    <label class="lang-switch">
+                        <input type="checkbox" id="lang-checkbox" onclick="toggleLang()">
+                        <div class="lang-slider">
+                            <span class="lang-label fr">FR</span>
+                            <span class="lang-label en">EN</span>
+                            <div class="lang-knob"></div>
+                        </div>
+                    </label>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <section class="hero">
         <h1 class="reveal" data-i18n="hero-title">Beyond Code.<br>Beyond Cloud.</h1>
         <p class="reveal" style="transition-delay: 0.2s;">"You can do it if you try"</p>
         <div class="cta-group reveal" style="transition-delay: 0.4s;">
-            <button class="btn btn-primary" data-i18n="btn-start">Démarrer un projet</button>
+            <button class="btn btn-primary start-btn" data-i18n="btn-start">Démarrer un projet</button>
         </div>
+        <script>
+            const btn = document.querySelector('.start-btn');
+            btn.addEventListener('click', () => {
+                window.location.href = "https://dev.artemix-core.fr/";
+            });
+        </script>
     </section>
 
     <section class="stats">
